@@ -1,0 +1,12 @@
+*.mat
+data/train_32x32.mat
+data/test_32x32.mat
+6040-2.tex
+6040-2.aux
+6040-2.log
+6040-2.synctex.gz
+Bayesian Linear Regression.pdf
+Homework.cls
+Homework.log
+Maximum Likelihood Estimators and Least Squares.pdf
+Parameter Estimation in Probabilistic Models, Linear Regression and Logistic Regression.pdf

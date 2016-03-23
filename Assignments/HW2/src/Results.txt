@@ -1,0 +1,155 @@
+Problem 2 Part 2
+T.tanh
+Optimization complete. Best validation score of 17.103825 % obtained at iteration 405408, with test performance 18.931591 %
+The code for file hw2b.py ran for 13.39m
+
+T.nnet.softmax
+Optimization complete. Best validation score of 81.161202 % obtained at iteration 3296, with test performance 80.415065 %
+The code for file hw2b.py ran for 0.37m
+
+Problem 2 Part 3
+Activation
+Sigmoid
+Optimization complete. Best validation score of 15.245902 % obtained at iteration 659200, with test performance 17.498078 %
+Tanh
+Optimization complete. Best validation score of 15.997268 % obtained at iteration 596576, with test performance 18.677940 %
+
+Learning Rate
+1
+Optimization complete. Best validation score of 85.942623 % obtained at iteration 6592, with test performance 84.062260 %
+The code for file hw2b.py ran for 0.70m
+0.1
+Optimization complete. Best validation score of 22.827869 % obtained at iteration 39552, with test performance 25.196003 %
+The code for file hw2b.py ran for 4.17m
+0.01
+Optimization complete. Best validation score of 15.997268 % obtained at iteration 596576, with test performance 18.677940 %
+0.001
+Optimization complete. Best validation score of 81.051913 % obtained at iteration 9888, with test performance 80.511145 %
+0.0001
+Optimization complete. Best validation score of 81.161202 % obtained at iteration 3296, with test performance 80.415065 %
+
+N Hidden
+100
+Optimization complete. Best validation score of 18.961749 % obtained at iteration 227424, with test performance 21.045350 %
+The code for file hw2b.py ran for 14.25m
+200
+Optimization complete. Best validation score of 17.622951 % obtained at iteration 810816, with test performance 21.014604 %
+300
+Optimization complete. Best validation score of 17.978142 % obtained at iteration 217536, with test performance 20.522675 %
+400
+Optimization complete. Best validation score of 16.297814 % obtained at iteration 454848, with test performance 18.654881 %
+500
+Optimization complete. Best validation score of 15.997268 % obtained at iteration 596576, with test performance 18.677940 %
+600
+Optimization complete. Best validation score of 15.614754 % obtained at iteration 540544, with test performance 18.897002 %
+700
+Optimization complete. Best validation score of 16.461749 % obtained at iteration 293344, with test performance 19.181399 %
+# 800
+# Optimization complete. Best validation score of 92.445355 % obtained at iteration 3296, with test performance 92.252114 %
+
+Epoch
+100
+Optimization complete. Best validation score of 16.680328 % obtained at iteration 329600, with test performance 18.881630 %
+The code for file hw2b.py ran for 17.83m
+200
+Optimization complete. Best validation score of 15.997268 % obtained at iteration 596576, with test performance 18.677940 %
+The code for file hw2b.py ran for 35.38m
+300
+Optimization complete. Best validation score of 15.997268 % obtained at iteration 596576, with test performance 18.677940 %
+The code for file hw2b.py ran for 36.91m
+400
+Optimization complete. Best validation score of 15.997268 % obtained at iteration 596576, with test performance 18.677940 %
+500
+Optimization complete. Best validation score of 15.997268 % obtained at iteration 596576, with test performance 18.677940 %
+Same onwards
+
+L1
+1000
+Optimization complete. Best validation score of 90.273224 % obtained at iteration 3296, with test performance 90.303613 %
+100
+Optimization complete. Best validation score of 81.161202 % obtained at iteration 16480, with test performance 80.415065 %
+10
+Optimization complete. Best validation score of 58.237705 % obtained at iteration 19776, with test performance 59.400461 %
+1
+Optimization complete. Best validation score of 81.161202 % obtained at iteration 3296, with test performance 80.415065 %
+0.1
+Optimization complete. Best validation score of 81.161202 % obtained at iteration 3296, with test performance 80.415065 %
+0.01
+Optimization complete. Best validation score of 81.161202 % obtained at iteration 3296, with test performance 80.415065 %
+0.001
+Optimization complete. Best validation score of 81.161202 % obtained at iteration 3296, with test performance 80.415065 %
+0.0001
+Optimization complete. Best validation score of 17.199454 % obtained at iteration 151616, with test performance 19.177556 %
+
+L2
+0.01
+Optimization complete. Best validation score of 18.142077 % obtained at iteration 497696, with test performance 20.272867 %
+0.001
+Optimization complete. Best validation score of 15.464481 % obtained at iteration 774560, with test performance 17.478862 %
+0.0001
+Optimization complete. Best validation score of 15.997268 % obtained at iteration 596576, with test performance 18.677940 %
+1e-05
+Optimization complete. Best validation score of 15.081967 % obtained at iteration 698752, with test performance 18.205227 %
+
+Layers
+1
+Optimization complete. Best validation score of 19.918033 % obtained at iteration 260384, with test performance 22.444274 %
+2
+Optimization complete. Best validation score of 15.450820 % obtained at iteration 922880, with test performance 18.639508 %
+3
+Optimization complete. Best validation score of 15.956284 % obtained at iteration 735008, with test performance 18.282091 %
+4
+Optimization complete. Best validation score of 15.163934 % obtained at iteration 767968, with test performance 18.850884 %
+5
+Optimization complete. Best validation score of 15.464481 % obtained at iteration 1315104, with test performance 18.397387 %
+6
+Optimization complete. Best validation score of 21.475410 % obtained at iteration 46144, with test performance 23.800922 %
+7
+Optimization complete. Best validation score of 15.204918 % obtained at iteration 1812800, with test performance 18.401230 %
+8
+Optimization complete. Best validation score of 15.286885 % obtained at iteration 1189856, with test performance 18.451191 %
+
+
+Problem 2 Part 4
+Layers 1 | Nodes per layers 2400
+Optimization complete. Best validation score of 19.084699 % obtained at iteration 415296, with test performance 21.099154 %
+Layers 2 | Nodes per layers 1200
+Optimization complete. Best validation score of 14.658470 % obtained at iteration 906400, with test performance 17.705611 %
+Layers 3 | Nodes per layers 800
+Optimization complete. Best validation score of 14.562842 % obtained at iteration 929472, with test performance 17.532667 %
+Layers 4 | Nodes per layers 600
+Optimization complete. Best validation score of 15.341530 % obtained at iteration 1041536, with test performance 18.716372 %
+Layers 5 | Nodes per layers 480
+Optimization complete. Best validation score of 21.010929 % obtained at iteration 59328, with test performance 22.517294 %
+Layers 6 | Nodes per layers 400
+Optimization complete. Best validation score of 21.475410 % obtained at iteration 46144, with test performance 23.800922 %
+Layers 7 | Nodes per layers 342
+Optimization complete. Best validation score of 21.666667 % obtained at iteration 46144, with test performance 24.073789 %
+Layers 8 | Nodes per layers 300
+Optimization complete. Best validation score of 23.852459 % obtained at iteration 42848, with test performance 25.749424 %
+
+
+Problem 2 Part 5
+N Hidden 1 Layer 400
+Optimization complete. Best validation score of 19.918033 % obtained at iteration 260384, with test performance 22.444274 %
+N Hidden 1 Layer 800
+Optimization complete. Best validation score of 18.961749 % obtained at iteration 444960, with test performance 21.502690 %
+N Hidden 1 Layer 1200
+Optimization complete. Best validation score of 19.467213 % obtained at iteration 336192, with test performance 21.929285 %
+N Hidden 1 Layer 1600
+Optimization complete. Best validation score of 19.699454 % obtained at iteration 273568, with test performance 21.998463 %
+N Hidden 1 Layer 2000
+Optimization complete. Best validation score of 20.218579 % obtained at iteration 365856, with test performance 21.487317 %
+
+
+N Hidden 2 Layers 400
+Optimization complete. Best validation score of 15.450820 % obtained at iteration 922880, with test performance 18.639508 %
+N Hidden 2 Layers 800
+Optimization complete. Best validation score of 15.956284 % obtained at iteration 563616, with test performance 18.262875 %
+N Hidden 2 Layers 1200
+Optimization complete. Best validation score of 14.658470 % obtained at iteration 906400, with test performance 17.705611 %
+N Hidden 2 Layers 1600
+Optimization complete. Best validation score of 16.325137 % obtained at iteration 194464, with test performance 18.946964 %
+N Hidden 2 Layers 2000
+Optimization complete. Best validation score of 17.158470 % obtained at iteration 161504, with test performance 19.607994 %
+
