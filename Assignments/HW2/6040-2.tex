@@ -1,0 +1,91 @@
+\documentclass[twoside]{Homework}
+\DeclareMathOperator{\Tr}{Tr} 
+
+\studname{Si Kai Lee}
+\uni{sl3950}
+\studmail{sl3950@columbia.edu}
+\coursename{Neural Networks and Deep Learning}
+\hwNo{2}
+
+\begin{document}
+\maketitle
+
+\section*{Problem A}
+\subsection*{i}
+\begin{align*}
+L_{ls} 
+&= \sum^{m}_{i=1} (y^i - Ax^i)^T (y^i - Ax^i)\\
+&= \sum^{m}_{i=1} ||y^i - Ax^i||_2^2\\
+&= ||Y-XA||_2^2\\ % Scalar
+\nabla_A L_{ls} 
+&= \nabla_A ||Y-AX||_2^2\\
+&= \nabla_A (Y - AX)^T (Y - AX)\\
+&= \nabla_A (Y^{T}Y - Y^{T}AX - (AX)^{T}Y + (AX)^{T} AX)\\
+&\textrm{Since $Y^{T}AX$ and $(AX)^{T}Y$ are scalars, $Y^{T}AX = (Y^{T}AX )^{T} = (AX)^{T}Y$,}\\
+&= \nabla_A (Y^{T}Y - 2(AX)^{T}Y + X^T A^T AX)\\
+&= 2 A X X^{T} - 2 XY^{T}\footnotemark\\
+&\textrm{Equating the above to 0,}\\
+&2 A X X^{T} - 2 XY^{T} = 0\\
+&A X X^{T} = XY^{T}\\
+&A_{ls} = XY^{T} (X X^{T})^{-1} 
+\end{align*}
+\footnotetext{Matrix Cookbook 77}
+
+\subsection*{ii}
+\begin{align*}
+L_{r} 
+&= \lambda||A||^2_F + \sum^{m}_{i=1} (y^i - Ax^i)^T (y^i - Ax^i)\\
+&= \lambda||A||^2_F + ||Y-AX||_2^2\\ % Scalar
+\nabla_A L_{r} 
+&= \nabla_A \lambda||A||^2_F + ||Y-AX||_2^2\\
+&=  2\lambda A + 2 A X X^{T} - 2 XY^{T}\\
+&\textrm{Equating the above to 0,}\\
+&2\lambda A + 2 A X X^{T} - 2 XY^{T} = 0\\
+&A(X X^{T} + \lambda I) = XY^{T}\\
+&A_{r} = XY^{T} (X X^{T} + \lambda I)^{-1} 
+\end{align*}
+
+\subsection*{iii}
+Assuming $e^i \sim \mathcal{N}(0, \sigma^2 I)$ and $e^i = y - Ax$, hence $y \sim \mathcal{N}(AX, \sigma^2 I)$
+\begin{align*}
+L_{n} 
+&= \frac{1}{(2\pi)^{\frac{n}{2}} (\sigma^2)^{\frac{n}{2}}} \exp(-\frac{1}{2\sigma^2} \sum^{m}_{i=1} (y^i - Ax^i)^T (y^i - Ax^i))\\
+l_n
+&= -\frac{n}{2}\ln (2\pi) -\frac{n}{2}\ln (\sigma^2) - \frac{1}{2\sigma^2} (Y - AX)^T (Y - AX)\\
+\nabla_A l_n
+&= -\frac{1}{2\sigma^2} 2 A X X^{T} - 2 X Y^T\\
+&\textrm{Equating the above to 0,}\\
+&2 A X X^{T} - 2 XY^{T} = 0\\
+&A_{MLE} = XY^T (X X^{T})^{-1}
+\end{align*}
+
+\subsection*{iv}
+Assuming $e^i \sim \mathcal{N}(0, \sigma^2 I)$, hence $y \sim \mathcal{N}(XA, \sigma^2 I)$
+\begin{align*}
+\Pr(A|X, Y) 
+&= \frac{\Pr(X, Y, A)}{\Pr(X,Y)} = \frac{\Pr(X, Y| A)\Pr(A)}{\Pr(X,Y)}\\ 
+&\propto \Pr(X, Y| A)\Pr(A)\\
+&= \exp(-\frac{1}{2\sigma^2} (Y - AX)^T (Y - AX)) * \exp(\frac{1}{2}\Tr[\lambda(A-M)^T(A-M)])\\
+&= \exp(-\frac{1}{2\sigma^2} (Y^{T}Y - 2(AX)^{T}Y + X^T A^T AX) * \exp(\frac{1}{2}\Tr[(A-M)\lambda(A-M)^T])\\
+&= \exp(-\frac{1}{2\sigma^2} (Y^{T}Y - 2(AX)^{T}Y + X^T A^T AX + \frac{1}{2}\Tr(A\lambda A^T - A\lambda M^T - M\lambda A^T - M\lambda M^T)\\
+&\textrm{Removing all terms non-related to $A$ as differentiating by $A$ later,}\\
+&= \exp(-\frac{1}{2\sigma^2} (- 2(AX)^{T}Y + X^T A^T AX) + \frac{1}{2}\Tr(A\lambda A^T - 2A\lambda M^T)\footnotemark
+\end{align*}
+\footnotetext{Matrix Cookbook 14}
+\newpage
+\noindent
+Since $A_{MAP} = \arg\max_{A}\ \ln\Pr(Y, X| A) + \ln\Pr(A)$
+\begin{align*}
+\nabla_A \ln\Pr(Y, X| A) + \ln\Pr(A)
+&= -\frac{1}{2\sigma^2} (-2XY^{T} + 2A X X^{T})+ \frac{\lambda}{2}(2A - 2M)\footnotemark\\
+\textrm{Equating to 0,}\\
+A(X X^{T} + \sigma^2 \lambda I) &= XY^{T} + \sigma^2 \lambda M\\
+A_{MAP} &= (XY^{T} + \sigma^2 \lambda M)(X X^{T} + \sigma^2 \lambda I)^{-1}
+\end{align*}
+\footnotetext{Matrix Cookbook 104, 115} 
+If $M$ is the zero matrix, $A_{MAP}$ would be $A_{r}$ with a $\sigma^2$ shift in the $\lambda I$ regulariser.
+
+\subsection*{v}
+If the $\lambda$ in (ii) and variance of the prior in (iv) were 0, then $A_{r} = A_{MAP} = A_{ls} = A_{MLE}$. (i) should be equal to  (iii) as the maximum likelihood estimate of $A$ the same $A$ with minimum squared error as the estimated $A$ would be the one that best fits the data.
+
+\end{document} 
