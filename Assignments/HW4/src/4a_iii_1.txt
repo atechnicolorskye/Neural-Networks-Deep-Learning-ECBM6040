@@ -1,0 +1,47 @@
+7 200 200 50
+BEST RESULT: epoch 29 valid F1 96.17 best test F1 93.44 with the model ../result
+
+7 200 200 50
+BEST RESULT: epoch 47 valid F1 96.45 best test F1 92.78 with the model ../result
+
+7 200 400 100
+BEST RESULT: epoch 56 valid F1 96.91 best test F1 93.4 with the model ../result
+
+7 200 400 50
+BEST RESULT: epoch 46 valid F1 96.45 best test F1 93.01 with the model ../result
+
+7 400 200 100
+BEST RESULT: epoch 58 valid F1 97.09 best test F1 93.5 with the model ../result
+
+7 400 200 50
+BEST RESULT: epoch 49 valid F1 96.65 best test F1 93.14 with the model ../result
+
+7 400 400 100
+BEST RESULT: epoch 44 valid F1 96.61 best test F1 93.61 with the model ../result
+
+7 400 400 50
+BEST RESULT: epoch 25 valid F1 96.84 best test F1 92.76 with the model ../result
+
+5 200 200 100
+BEST RESULT: epoch 47 valid F1 96.73 best test F1 93.54 with the model ../result
+
+5 200 200 50
+BEST RESULT: epoch 57 valid F1 96.64 best test F1 92.85 with the model ../result
+
+5 200 400 100
+BEST RESULT: epoch 27 valid F1 96.58 best test F1 92.78 with the model ../result
+
+5 200 400 50
+BEST RESULT: epoch 49 valid F1 96.73 best test F1 93.62 with the model ../result
+
+5 400 200 100
+BEST RESULT: epoch 59 valid F1 96.85 best test F1 93.22 with the model ../result
+
+5 400 200 50
+BEST RESULT: epoch 51 valid F1 96.97 best test F1 93.5 with the model ../result
+
+5 400 400 100
+BEST RESULT: epoch 49 valid F1 96.66 best test F1 93.35 with the model ../result
+
+5 400 400 50
+BEST RESULT: epoch 37 valid F1 96.65 best test F1 93.51 with the model ../result

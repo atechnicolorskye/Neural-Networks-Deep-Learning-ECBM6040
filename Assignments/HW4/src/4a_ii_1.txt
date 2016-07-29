@@ -1,0 +1,23 @@
+7 200 100 False
+BEST RESULT: epoch 52 valid F1 97.49 best test F1 94.14 with the model ../result
+
+7 200 50 False
+BEST RESULT: epoch 31 valid F1 97.56 best test F1 94.0 with the model ../result
+
+7 400 100 False
+BEST RESULT: epoch 37 valid F1 97.32 best test F1 94.14 with the model ../result
+
+7 400 50 False
+BEST RESULT: epoch 50 valid F1 97.13 best test F1 94.09 with the model ../result
+
+5 400 100 False
+BEST RESULT: epoch 49 valid F1 97.37 best test F1 94.4 with the model ../result
+
+5 400 50 False
+BEST RESULT: epoch 43 valid F1 97.57 best test F1 93.42 with the model ../result
+
+5 200 100 False
+BEST RESULT: epoch 23 valid F1 97.34 best test F1 94.0 with the model ../result
+
+5 200 50 False
+BEST RESULT: epoch 38 valid F1 97.52 best test F1 93.89 with the model ../result

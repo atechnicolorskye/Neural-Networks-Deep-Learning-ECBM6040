@@ -1,0 +1,33 @@
+test_mlp_parity(learning_rate=0.05, L1_reg=0.00, L2_reg=0.00, n_epochs=150000,
+               batch_size=1000, n_hidden=300, n_hiddenLayers=1, nbit=8, verbose=True)
+Best validation score of 0.000000 % obtained at iteration 101333, with test performance 0.000000 %
+The training process for function test_mlp_parity ran for 61.01m
+
+test_mlp_parity(learning_rate=0.05, L1_reg=0.00, L2_reg=0.00, n_epochs=150000,
+                batch_size=1000, n_hidden=300, n_hiddenLayers=1, nbit=12, verbose=True)
+Best validation score of 34.400000 % obtained at iteration 136638, with test performance 37.000000 %
+The training process for function test_mlp_parity ran for 45.83m
+
+test_mlp_parity(learning_rate=0.05, L1_reg=0.00, L2_reg=0.00, n_epochs=120000,
+                batch_size=1000, n_hidden=[200, 200], n_hiddenLayers=2, nbit=8, verbose=False)
+Best validation score of 0.000000 % obtained at iteration 34950, with test performance 0.000000 %
+The training process for function test_mlp_parity ran for 9.18m
+
+test_mlp_parity(learning_rate=0.05, L1_reg=0.00, L2_reg=0.00, n_epochs=120000,
+                batch_size=1000, n_hidden=[200, 200], n_hiddenLayers=2, nbit=12, verbose=False)
+Best validation score of 16.200000 % obtained at iteration 62256, with test performance 22.000000 %
+The training process for function test_mlp_parity ran for 9.19m
+
+With more examples 10000, 1500, 300
+
+test_mlp_parity 150000 300 1 12
+Best validation score of 0.000000 % obtained at iteration 605840, with test performance 0.000000 %
+The training process for function test_mlp_parity ran for 51.86m
+
+test_mlp_parity 120000 [200, 200] 2 12
+Best validation score of 0.000000 % obtained at iteration 89090, with test performance 1.000000 %
+The training process for function test_mlp_parity ran for 13.21m
+
+test_mlp_parity 120000 [200, 200, 200, 200] 4 12
+Best validation score of 0.000000 % obtained at iteration 38120, with test performance 0.000000 %
+The training process for function test_mlp_parity ran for 17.68m
